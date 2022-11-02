@@ -1,0 +1,127 @@
+.contenedor{
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+	margin-top: 5px;
+	border-radius: 8px;
+
+	margin: 10px auto;
+	margin-bottom: 60px;
+
+
+}
+
+
+
+
+
+
+
+.contenedor .tablaContenidos{
+	margin: 12px;
+	width: 280px;
+	padding-top: 10px;
+	height: 100%;
+
+	margin-top: 60px;
+
+	
+
+	
+
+
+}
+
+
+.contenedor .tablaContenidos .indice{
+	border-width: 1px;
+	border-color: ghostwhite;
+	border-radius: 8px;
+	border-style: ridge;
+	text-align: center;
+	height: 100%;
+	list-style-type: none;
+
+	background-color: rgba( 0, 0, 0, .5);
+
+
+
+
+
+}
+
+
+
+.contenedor .tablaContenidos .indice .h2Indice{
+	padding: 12px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+
+
+.contenedor .tablaContenidos .liCat{
+	padding: 8px;
+	margin: 10px;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+
+}
+
+
+
+.contenedor .tablaContenidos .liCat .categorias{
+	margin: 10px;
+	padding: 8px;
+	color: white;
+	width: 100%;
+	text-decoration: none;
+	
+	background-color: rgba( 23, 0, 72, .7);
+
+	border-radius: 5px;
+	border-width: 0px 0px 0px 3px;
+  	border-style: solid;
+ 	border-left-color: rgba( 150, 170, 255, .9);
+
+
+}
+
+
+.contenedor .tablaContenidos .liCat .categorias:hover{
+	border-left-color: ghostwhite;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
