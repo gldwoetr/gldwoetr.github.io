@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="security" content="import(http://mozilla.org/security/tight.txt)" />
+	<meta name="language" content="ES">
+
+
+
+
+	<link rel="shortcut icon" href="../static/img/favicon.png">
+	<title>Todos los distintos tipos de cierres - CONCIERRES.COM </title>
+	<meta name="description" content="Todos los tipos de cierres que te puedas imaginar los encontrarás aquí. Perimetrales, de bisuteria y joyeria, para bolsos, reojes y mucho más">
+
+
+
+	
+	
+	<link rel="stylesheet" type="text/css" href="../static/css/acordeon.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/general.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/cards.css">
+	
+
+	
+
+	
+
+</head>
+
+
+
+<body>
+
+	<div class="logoDiv">
+		<a href="../index.html" >
+			<img src="../static/img/logo.png" class="logoIMG" alt="conCIERRES.COM logo de la web">
+		</a>
+		
+	</div>
+	
+
+
+	<div class="tituloDesc">
+
+		<h1> 
+			<strong>TIPOS DE CIERRES</strong><br><br>
+			Web especializada en todos los tipos de cierres que existen, tenemos cierres perimetrales, cierres de bisuteria y joyería, para maletas, cajas jardines, piscinas<br><br>
+
+			¡y muchísimo más!
+
+
+		</h1>
+
+
+	</div>
+	
+
+  
+	 
+
+	<div class="cardsContainer">
+
+		<!-- 3 cards div -->
+
+
+		<div class="card">
+
+			<h4> TIPOS DE CIERRES PERIMETRALES </h4>
+
+
+				<div class="cardsSubCategorias">
+					<ul>
+						<a href="perimetrales/casas-y-chalets" target="_blank">
+							<li class="linkSubCategorias">
+								1. Cierres para casas y chalets
+							</li>
+						</a>
+
+						<a href="#" target="_blank">
+							<li class="linkSubCategorias">
+								2. Cierres para fincas
+							</li>
+						</a>
+
+						<a href="#" target="_blank">
+							<li class="linkSubCategorias">
+								3. Cierres para parcelas o terrenos
+							</li>
+						</a>
+
+						<a href="#" target="_blank">
+							<li class="linkSubCategorias">
+								4. Cierres para jardines
+							</li>
+						</a>
+
+						<a href="#" target="_blank">
+							<li class="linkSubCategorias">
+								5. Cierres para patios
+							</li>
+						</a>
+
+						<a href="#" target="_blank">
+							<li class="linkSubCategorias">
+								6. Cierres para piscinas
+							</li>
+						</a>
+
+						<a href="#" target="_blank">
+							<li class="linkSubCategorias">
+								7. Cierres para huertos
+							</li>
+						</a>
+						
+					</ul>
+				</div>
+		</div>
+		
+
+		
+
+
+		<div class="card">
+
+			<h4> TIPOS DE CIERRES PARA ACCESORIOS </h4>
+
+
+				<div class="cardsSubCategorias">
+					<ul>
+						<a href="#">
+							<li class="linkSubCategorias">
+								1. Cierres para bolsos carteras monederos
+							</li>
+						</a>
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								2. Cierres para bisuteria y joyeria
+							</li>
+						</a>
+
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								3. Cierres para relojes
+							</li>
+						</a>
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								4. Cierres para cintos o cinturones
+							</li>
+						</a>
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								5. Cierres para mochilas y cordones
+							</li>
+						</a>
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								6. Cierres para maletas maletines
+							</li>
+						</a>
+
+						
+
+						
+						
+					</ul>
+				</div>
+		</div>
+
+
+
+
+
+		<div class="card">
+
+			<h4> TIPOS DE CIERRES PARA ANIMALES </h4>
+
+
+				<div class="cardsSubCategorias">
+					<ul>
+						<a href="#">
+							<li class="linkSubCategorias">
+								1. Cierres para gatos
+							</li>
+						</a>
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								2. Cierres para perros
+							</li>
+						</a>
+
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								3. Cierres para gallinas
+							</li>
+						</a>
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								4. Cierres para vacas
+							</li>
+						</a>
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								5. Cierres para ovejas
+							</li>
+						</a>
+
+						<a href="#">
+							<li class="linkSubCategorias">
+								5. Cierres para cerdos
+							</li>
+						</a>
+
+
+						
+
+						
+
+						
+						
+					</ul>
+				</div>
+		</div>
+
+
+
+
+		
+
+
+		
+
+
+
+
+
+		<footer class="footer">
+			<div class="footerContenedor">
+				<a href="../index.html">CONCIERRES.com</a>
+				<br><br>
+				<p>Copyright © 2022 - All rights reserved.</p>
+				<div class="paginas">
+					<a href="../legal/politicas-de-privacidad.html" target="_blank" rel="nofollow">P. de privacidad</a>
+					<a href="../legal/aviso-legal.html" target="_blank" rel="nofollow">Aviso Legal</a>
+					<a href="../legal/politicas-de-cookies.html" target="_blank" rel="nofollow">P. de Cookies</a> 
+				</div>
+			</div>
+		</footer>
+
+
+
+	</div>
+
+</body>
+
+
+
+
+
+
+
+</html>
