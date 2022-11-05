@@ -53,7 +53,7 @@
 }
 
 
-.cardsContainer .card h4{
+.cardsContainer .card h3,h4{
 	font-weight: 600;
 	font-size: 16px;
 	border-radius: 4px;
@@ -133,7 +133,7 @@
 	padding-top: 5px;
 	padding-bottom: 5px;
 
-	 list-style:none
+	list-style:none
 
 }
 
@@ -160,6 +160,12 @@
 }
 
 
+
+
+
+.cardsSubCategorias .linkSubCategorias a:hover{
+	color: yellow;
+}
 
 
 .cardsContainer .card .pCard-Cierres{
