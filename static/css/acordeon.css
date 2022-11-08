@@ -38,6 +38,7 @@
 }
 .tab { 
   width: 95%;
+  margin-top: 10px;
 
 }
 
@@ -58,10 +59,10 @@
   color: #fff;
   cursor: pointer;
 
-  background: rgba(19,0,83,1.0);
+  background: rgba(64,0,64,.6);
   text-align: left;
   margin-top: 8px;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 
@@ -72,7 +73,6 @@
 /* css animation will not work with auto height */
 /* this is why we use max-height instead */
 .tab .content {
-  background: #442356;
   overflow: hidden;
   transition: max-height 0.1s;
   max-height: 0;
@@ -81,12 +81,24 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 
-}
-.tab .content p { 
-  padding: 10px; 
-  color: ghostwhite;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
 
 }
+
+
+.tab .content p { 
+  padding: 10px; 
+  color: whitesmoke;
+
+}
+
+.tab .content p a{
+  color: skyblue;
+  text-decoration: underline;
+
+}
+
 
 /* (E) OPEN TAB ON CHECKED */
 .tab input:checked ~ .content { max-height: 100%; }
