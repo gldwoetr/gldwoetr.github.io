@@ -26,7 +26,12 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/cards.css"/>
 	
 
-	<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+	
+	
+	<link href="videojs.vast.css" rel="stylesheet" type="text/css">
+	<script src="vast-client.js"></script>
+	<script src="video.ads.js"></script>
+	<script src="videojs.vast.js"></script>
 
 	
 
@@ -72,58 +77,24 @@
 	
 	
 	
-	<video id="video-id"><source src="https://www.youtube.com/watch?v=6LmO6rmDW08" type="video/mp4"></source>
-<script>
-    var myFP = fluidPlayer(
-        'video-id',	{
-	"layoutControls": {
-		"controlBar": {
-			"autoHideTimeout": 3,
-			"animated": true,
-			"autoHide": false
-		},
-		"htmlOnPauseBlock": {
-			"html": null,
-			"height": "800",
-			"width": "600"
-		},
-		"autoPlay": true,
-		"mute": true,
-		"allowTheatre": true,
-		"playPauseAnimation": true,
-		"playbackRateEnabled": true,
-		"allowDownload": false,
-		"playButtonShowing": true,
-		"fillToContainer": false,
-		"posterImage": ""
-	},
-	"vastOptions": {
-		"adList": [
-			{
-				"roll": "preRoll",
-				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
-				"adText": ""
-			},
-			{
-				"roll": "midRoll",
-				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
-				"adText": ""
-			},
-			{
-				"roll": "postRoll",
-				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
-				"adText": ""
-			},
-			{
-				"roll": "onPauseRoll",
-				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
-				"adText": ""
-			}
-		],
-		"adCTAText": false,
-		"adCTATextPosition": ""
-	}
-});</script></video>	
+<video id="example_video_1" class="video-js vjs-default-skin"
+    controls preload="auto" width="640" height="264"
+    poster="http://vjs.zencdn.net/v/oceans.png"
+    data-setup='{
+      "plugins": {
+	ads: {},
+	vast: {
+	url: 'https://www.videosprofitnetwork.com/watch.xml?key=your_unique_key'
+      }
+    }'>
+  <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'/>
+  <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
+  <source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg'/>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+</video>	
 	
 	
 	
