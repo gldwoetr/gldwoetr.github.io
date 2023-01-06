@@ -28,10 +28,13 @@
 
 	
 	
-	<link href="videojs.vast.css" rel="stylesheet" type="text/css">
-	<script src="vast-client.js"></script>
-	<script src="video.ads.js"></script>
-	<script src="videojs.vast.js"></script>
+	<!-- Video.js 4 -->
+	<link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/4.12/video.js"></script>
+	<!-- Common -->
+	<link href="/path/to/videojs.vast.vpaid.min.css" rel="stylesheet">
+	<!-- Video.js 4 -->
+	<script src="/path/to/videojs_4.vast.vpaid.min.js"></script>
 
 	
 
@@ -76,15 +79,16 @@
 	
 	
 	
-	
 <video id="example_video_1" class="video-js vjs-default-skin"
     controls preload="auto" width="640" height="264"
     poster="http://vjs.zencdn.net/v/oceans.png"
     data-setup='{
       "plugins": {
-	ads: {},
-	vast: {
-	url: 'https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4'
+      "vastClient": {
+        "adTagUrl": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
+        "adCancelTimeout": 5000,
+        "adsEnabled": true
+        }
       }
     }'>
   <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'/>
@@ -94,7 +98,7 @@
     To view this video please enable JavaScript, and consider upgrading to a web browser that
     <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
   </p>
-</video>	
+</video>
 	
 	
 	
