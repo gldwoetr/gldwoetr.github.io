@@ -28,29 +28,6 @@
 
 	
 	
-		<link href="http://vjs.zencdn.net/4.7.1/video-js.css" rel="stylesheet">
-		<link href="lib/videojs-contrib-ads/videojs.ads.css" rel="stylesheet" type="text/css">
-		<link href="videojs.vast.css" rel="stylesheet" type="text/css">
-
-		<style type="text/css">
-		.description {
-		background-color:#eee;
-		border: 1px solid #777;
-		padding: 10px;
-		font-size: .8em;
-		line-height: 1.5em;
-		font-family: Verdana, sans-serif;
-		}
-		.example-video-container {
-		display: inline-block;
-		}
-		</style>
-		<!--[if lt IE 9]><script src="lib/es5.js"></script><![endif]-->
-		<script src="http://vjs.zencdn.net/4.7.1/video.js"></script>
-		<script src="lib/videojs-contrib-ads/videojs.ads.js"></script>
-
-		<script src="lib/vast-client.js"></script>
-		<script src="videojs.vast.js"></script>
 
 	
 
@@ -95,35 +72,63 @@
 	
 	
 	
- <div class="example-video-container">
-    <p class="description">With autoplay.</p>
-
-    <video id="vid2" class="video-js vjs-default-skin" autoplay controls preload="auto"
-        poster="http://video-js.zencoder.com/oceans-clip.png"
-        data-setup='{}'
-        width='640'
-        height='400'
-        >
-      <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
-      <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
-      <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg'>
-      <p>Video Playback Not Supported</p>
-    </video>
-</div>
-
  
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<video id="video-id"><source src="https://www.youtube.com/watch?v=Fm0um7fowlU&feature=youtu.be" type="video/mp4"></source>
+<script>
+    var myFP = fluidPlayer(
+        'video-id',	{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 3,
+			"animated": true,
+			"autoHide": false
+		},
+		"htmlOnPauseBlock": {
+			"html": null,
+			"height": "1920",
+			"width": "1080"
+		},
+		"autoPlay": true,
+		"mute": true,
+		"allowTheatre": true,
+		"playPauseAnimation": true,
+		"playbackRateEnabled": true,
+		"allowDownload": true,
+		"playButtonShowing": true,
+		"fillToContainer": true,
+		"posterImage": ""
+	},
+	"vastOptions": {
+		"adList": [
+			{
+				"roll": "preRoll",
+				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
+				"adText": ""
+			},
+			{
+				"roll": "midRoll",
+				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
+				"adText": ""
+			},
+			{
+				"roll": "postRoll",
+				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
+				"adText": ""
+			},
+			{
+				"roll": "onPauseRoll",
+				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
+				"adText": ""
+			}
+		],
+		"adCTAText": false,
+		"adCTATextPosition": ""
+	}
+});</script></video>
 
-  <script>
-    var vid2 = videojs('vid2');
-       
 
-    vid2.muted(true);
-    vid2.ads();
-    vid2.vast({
-      url: 'https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4'
-    });
 
-  </script>
 	
 	
 	
