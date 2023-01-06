@@ -26,14 +26,6 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/cards.css"/>
 	
 
-	
-	<!-- Video.js 5 -->
-<link href="http://vjs.zencdn.net/5.4.6/video-js.css" rel="stylesheet">
-<script src="http://vjs.zencdn.net/5.4.6/video.js"></script>
-	<!-- Common -->
-<link href="/path/to/videojs.vast.vpaid.min.css" rel="stylesheet">
-	<!-- Video.js 5 -->
-<script src="/path/to/videojs_5.vast.vpaid.min.js"></script>
 
 	
 
@@ -78,28 +70,56 @@
 	
 	
 	
- 
-<video id="example_video_1" class="video-js vjs-default-skin"
-    controls preload="auto" width="640" height="264"
-    poster="http://vjs.zencdn.net/v/oceans.png"
-    data-setup='{
-      "plugins": {
-      "vastClient": {
-        "adTagUrl": "http://pubads.g.doubleclick.net/gampad/ads?env=....",
-        "adCancelTimeout": 5000,
-        "adsEnabled": true
-        }
-      }
-    }'>
-  <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'/>
-  <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
-  <source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg'/>
-  <p class="vjs-no-js">
-    To view this video please enable JavaScript, and consider upgrading to a web browser that
-    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-  </p>
-</video>
 
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<video id="video-id"><source src="https://www.youtube.com/watch?v=qo7GbyLUGRQ" type="video/mp4" />
+<script>
+    var myFP = fluidPlayer(
+        'video-id',	{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 3,
+			"animated": true,
+			"autoHide": true
+		},
+		"htmlOnPauseBlock": {
+			"html": null,
+			"height": null,
+			"width": null
+		},
+		"autoPlay": true,
+		"mute": true,
+		"allowTheatre": true,
+		"playPauseAnimation": false,
+		"playbackRateEnabled": false,
+		"allowDownload": false,
+		"playButtonShowing": true,
+		"fillToContainer": false,
+		"posterImage": ""
+	},
+	"vastOptions": {
+		"adList": [
+			{
+				"roll": "preRoll",
+				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
+				"adText": ""
+			},
+			{
+				"roll": "midRoll",
+				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
+				"adText": ""
+			},
+			{
+				"roll": "postRoll",
+				"vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=184187ae0efe755c6476aca1a994c4c4",
+				"adText": ""
+			}
+		],
+		"adCTAText": false,
+		"adCTATextPosition": ""
+	}
+});
+</script>
 
 
 	
